@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  height: 800px;
+  box-sizing: border-box;
+  background: url("../img/car-transmission-system.webp") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header::after {
+  content: "Z";
+  font-size: 950px;
+  font-weight: bold;
+  line-height: 65%;
+  color: rgba(38, 37, 44, 0.5);
+  right: 0;
+  top: 10%;
+  position: absolute;
+  z-index: 0;
+}
+
+.header__inner {
+  width: 100%;
+  height: 800px;
+  background-color: rgba(31, 30, 38, 0.9);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 32px 1px 32px;
+  position: relative;
+}
+
+.header__logo {
+  color: rgb(230, 230, 230);
+  font-size: 28px;
+  letter-spacing: -3px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  align-self: center;
+}
+
+.header__logo-plus {
+  display: block;
+  font-size: 36px;
+  color: rgb(250, 86, 86);
+}
+
+.header__heading {
+  color: rgb(230, 230, 230);
+  font-size: 118px;
+  line-height: 100px;
+  margin: 290px 0 0 0;
+}
+
+.header__action {
+  /* color: rgb(230, 230, 230); */
+  color: rgb(250, 86, 86);
+  margin: 0 0 0 6px;
+  position: relative;
+  z-index: 1;
+  font-size: 32px;
+}
+
+.navigation {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__list {
+  color: #fff;
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  align-items: center;
+  padding: 0;
+}
+
+.navigation__list-item {
+  transition: 300ms all linear;
+}
+
+.navigation__list-item--visual {
+  padding: 6px 14px;
+  font-weight: bold;
+  color: rgba(31, 30, 38, 0.9);
+  background-color: #d0e1f9;
+}
+
+.navigation__list-item--visual:hover {
+  background-color: rgb(250, 86, 86);
+  color: white;
+  transform: scale(1.07);
+}
+
+.navigation__list-item:hover {
+  transform: scale(1.03);
+  text-decoration: underline;
+}
+
+.block {
+  width: 97px;
+}
+
+.header__buttons {
+  width: 754px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__button {
+  position: relative;
+  background-color: #2836559a;
+  border: none;
+  padding: 12px 46px;
+  font-size: 24px;
+  color: rgb(194, 194, 194);
+  margin-top: 46px;
+  letter-spacing: 2px;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 400ms all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.header__button:hover {
+  background-color: #898a8dfa;
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.benefits {
+  background-color: rgba(48, 47, 53, 1);
+  color: rgb(230, 230, 230);
+}
+
+.benefits .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.benefits__caption {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+}
+
+.benefits__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.benefits__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.benefits__img {
+  width: 52px;
+  height: 52px;
+}
+
+.benefits__img--small {
+  width: 64px;
+  height: 64px;
+}
+
+.benefits__img-block {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: #d0e1f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: aqua, url("../img/checklist.svg") center no-repeat;
+  background-size: 75%; */
+}
+
+.benefits__text {
+  text-align: center;
+}

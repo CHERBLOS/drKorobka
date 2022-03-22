@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>KPP-PLUS</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="container">
+          <nav class="header__navigation navigation">
+            <div class="header__logo">
+              AKPP<span class="header__logo-plus">+</span>
+            </div>
+            <ul class="navigation__list">
+              <li class="navigation__list-item">Симптоматика</li>
+              <li class="navigation__list-item">О нас</li>
+              <li class="navigation__list-item navigation__list-item--visual">
+                Диагностика
+              </li>
+              <li class="navigation__list-item">Наши услуги</li>
+              <li class="navigation__list-item">Контакты</li>
+            </ul>
+            <div class="block"></div>
+          </nav>
+          <h1 class="header__heading">РЕМОНТ КПП</h1>
+          <p class="header__action">Бесплатная диагностика в случае ремонта</p>
+          <div class="header__buttons">
+            <button class="header__button">Ремонт</button>
+            <button class="header__button">Замена</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="benefits">
+      <div class="container">
+        <h2 class="benefits__caption">Наши преимущества</h2>
+        <ul class="benefits__list">
+          <li class="benefits__list-item">
+            <div class="benefits__img-block">
+              <img src="img/car.svg" alt="" class="benefits__img" />
+            </div>
+            <p class="benefits__text">Капитальный ремонт под ключ</p>
+          </li>
+          <li class="benefits__list-item">
+            <div class="benefits__img-block">
+              <img src="img/car-service.svg" alt="" class="benefits__img" />
+            </div>
+            <p class="benefits__text">Собственная служба эвакуации</p>
+          </li>
+          <li class="benefits__list-item">
+            <div class="benefits__img-block">
+              <img src="img/checklist.svg" alt="" class="benefits__img" />
+            </div>
+            <p class="benefits__text">Гарантия до 2-х лет</p>
+          </li>
+          <li class="benefits__list-item">
+            <div class="benefits__img-block">
+              <img src="img/customer.svg" alt="" class="benefits__img" />
+            </div>
+            <p class="benefits__text">Присутствие при дефектовке</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <form action="sendtg.php" method="POST">
+        <legend>Заголовок формы</legend>
+      
+        <div class="form-group">
+          <label for="">Какие проблемы с коробкой вас беспокоят?</label>
+          <input type="text" class="form-control" id="" name="problem" placeholder="Пинки, пробуксовка">
+        </div>
+        <div class="form-group">
+          <label for="">Марка авто</label>
+          <input type="text" class="form-control" id="" name="name_car" placeholder="Ford">
+        </div>
+        <div class="form-group">
+          <label for="">Модель авто</label>
+          <input type="text" class="form-control" id="" name="model" placeholder="Focus 2">
+        </div>
+        <div class="form-group">
+          <label for="">Объем двигателя</label>
+          <input type="text" class="form-control" id="" name="volume" placeholder="2.0">
+        </div>
+        <div class="form-group">
+          <label for="">Год выпуска авто</label>
+          <input type="text" class="form-control" id="" name="year" placeholder="2010">
+        </div>
+        <div class="form-group">
+          <label for="">Ваше имя</label>
+          <input type="text" class="form-control" id="" name="user_name" placeholder="Иван">
+        </div>
+        <div class="form-group">
+          <label for="">Введите номер телефона</label>
+          <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить форму</button>
+      </form>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
