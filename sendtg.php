@@ -7,7 +7,7 @@ $problem = $_POST['problem'];
 $name_car = $_POST['name_car'];
 $model = $_POST['model'];
 $volume = $_POST['volume'];
-$year = $_POST['year']
+$year = $_POST['year'];
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 
